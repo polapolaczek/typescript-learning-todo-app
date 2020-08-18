@@ -6,7 +6,7 @@ _Created for the purposes of learning Typescript._
 
 ### Game Plan
 
--   [ ] setup for React + Typescript
+-   [x] setup for React + Typescript
 -   [ ] basic functionality
     -   [ ] add todo
     -   [ ] display added todo
