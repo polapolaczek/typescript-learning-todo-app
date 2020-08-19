@@ -1,6 +1,6 @@
 ## TypeScript Learning - Todo App
 
-_Created for the purposes of learning Typescript._
+_Created for the purposes of learning Typescript. See the [live demo](http://polapolaczek.github.io/typescript-learning-todo-app)_
 
 ---
 
@@ -8,8 +8,8 @@ _Created for the purposes of learning Typescript._
 
 -   [x] setup for React + Typescript
 -   [ ] basic functionality
-    -   [ ] add todo
-    -   [ ] display added todo
+    -   [x] add todo
+    -   [x] display added todo
     -   [ ] remove added todo
     -   [ ] mark todo as completed
 
