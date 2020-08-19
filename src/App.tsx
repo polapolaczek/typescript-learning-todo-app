@@ -1,16 +1,6 @@
 import React from "react";
-import "./App.css";
+import MainView from "./views/MainView";
 
-const App = () => {
-    return (
-        <>
-            <h1>Todo App</h1>
-            <form>
-              <input type="text"/>
-              <button type="submit">Add</button>
-            </form>
-        </>
-    );
-};
+const App = () => <MainView />;
 
 export default App;
