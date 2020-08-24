@@ -7,11 +7,11 @@ _Created for the purposes of learning Typescript. See the [live demo](http://pol
 ### Game Plan
 
 -   [x] setup for React + Typescript
--   [ ] basic functionality
+-   [x] basic functionality
     -   [x] add todo
     -   [x] display added todo
     -   [x] remove added todo
-    -   [ ] mark todo as completed
+    -   [x] mark todo as completed
 
 ---
 
