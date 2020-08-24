@@ -20,13 +20,13 @@ const useTodos = () => {
         [todos]
     );
 
-    const markAsDone = useCallback((id: string) => {
+    const toggleDone = useCallback((id: string) => {
         const updateDone = (prevTodo: ITodo) =>
-            prevTodo.id === id ? { ...prevTodo, isDone: true } : prevTodo;
+            prevTodo.id === id ? { ...prevTodo, isDone: !prevTodo.isDone } : prevTodo;
         setTodos((prev) => prev.map(updateDone));
     }, []);
 
-    return { todos, addTodo, removeTodo, markAsDone };
+    return { todos, addTodo, removeTodo, toggleDone };
 };
 
 export default useTodos;

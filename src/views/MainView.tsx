@@ -20,7 +20,7 @@ import { ITodo } from "../types";
 import { useTodosContext } from "../todos/TodosContext";
 
 const MainView = () => {
-    const { todos, addTodo, removeTodo, markAsDone } = useTodosContext();
+    const { todos, addTodo, removeTodo, toggleDone } = useTodosContext();
 
     return (
         <>
@@ -34,7 +34,7 @@ const MainView = () => {
                     <TodoItem
                         todo={todo}
                         onRemove={removeTodo}
-                        onDone={markAsDone}
+                        onCompletion={toggleDone}
                     >
                         <Text />
                         <RemoveButton>{REMOVE_BUTTON}</RemoveButton>

@@ -9,13 +9,13 @@ type CompletionButton = {
 const CompletionButton = (props: CompletionButton) => {
     const {
         todo: { id, isDone },
-        onDone,
+        onCompletion,
     } = useTodoItemContext();
     const [doneText, undoneText] = props.texts;
     return (
         <Button
             type="button"
-            onClick={() => onDone(id)}
+            onClick={() => onCompletion(id)}
             text={isDone ? undoneText : doneText}
         />
     );
