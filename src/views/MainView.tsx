@@ -4,6 +4,7 @@ import {
     ADD_BUTTON,
     REMOVE_BUTTON,
     DONE_BUTTON,
+    UNDONE_BUTTON,
 } from "../constants/labels";
 import AddTodoForm, {
     Input,
@@ -13,7 +14,7 @@ import TodosList from "../common-components/TodosList";
 import TodoItem, {
     Text,
     RemoveButton,
-    DoneButton,
+    CompletionButton,
 } from "../common-components/TodoItem/TodoItem";
 import { ITodo } from "../types";
 import { useTodosContext } from "../todos/TodosContext";
@@ -37,7 +38,7 @@ const MainView = () => {
                     >
                         <Text />
                         <RemoveButton>{REMOVE_BUTTON}</RemoveButton>
-                        <DoneButton>{DONE_BUTTON}</DoneButton>
+                        <CompletionButton texts={[DONE_BUTTON, UNDONE_BUTTON]}/>
                     </TodoItem>
                 )}
             </TodosList>

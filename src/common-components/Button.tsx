@@ -1,10 +1,10 @@
 import React from "react";
 
-export type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
-    text?: string;
+export interface IButtonProps extends React.ComponentPropsWithoutRef<"button"> {
+    text?: string | string[];
 };
 
-const Button = (props: ButtonProps) => (
+const Button = (props: IButtonProps) => (
     <button {...props}>{props.text ? props.text : props.children}</button>
 );
 

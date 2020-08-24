@@ -1,6 +1,6 @@
 import React from "react";
-import Button, { ButtonProps } from "../Button";
+import Button, { IButtonProps } from "../Button";
 
-const AddButton = (props: ButtonProps) => <Button type="submit" {...props} />;
+const AddButton = (props: IButtonProps) => <Button type="submit" {...props} />;
 
 export default AddButton;
