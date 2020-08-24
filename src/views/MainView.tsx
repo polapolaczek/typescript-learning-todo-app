@@ -1,5 +1,10 @@
 import React from "react";
-import { HEADER, ADD_BUTTON, REMOVE_BUTTON } from "../constants/labels";
+import {
+    HEADER,
+    ADD_BUTTON,
+    REMOVE_BUTTON,
+    DONE_BUTTON,
+} from "../constants/labels";
 import AddTodoForm, {
     Input,
     AddButton,
@@ -8,6 +13,7 @@ import TodosList from "../common-components/TodosList";
 import TodoItem, {
     Text,
     RemoveButton,
+    DoneButton,
 } from "../common-components/TodoItem/TodoItem";
 import { ITodo } from "../types";
 import { useTodosContext } from "../todos/TodosContext";
@@ -27,6 +33,7 @@ const MainView = () => {
                     <TodoItem todo={todo} onRemove={removeTodo}>
                         <Text />
                         <RemoveButton>{REMOVE_BUTTON}</RemoveButton>
+                        <DoneButton>{DONE_BUTTON}</DoneButton>
                     </TodoItem>
                 )}
             </TodosList>

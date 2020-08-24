@@ -1,6 +1,7 @@
 import React from "react";
 import { TodoItemContext, ITodoItem } from "./TodoItemContext";
 import RemoveButton from "./RemoveButton";
+import DoneButton from "./DoneButton";
 import Text from "./Text";
 
 type TodoItemProps = ITodoItem & {
@@ -18,4 +19,4 @@ const TodoItem = ({ children, todo, onRemove }: TodoItemProps) => {
 
 export default TodoItem;
 
-export { RemoveButton, Text };
+export { RemoveButton, DoneButton, Text };
