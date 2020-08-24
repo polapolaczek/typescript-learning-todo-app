@@ -5,6 +5,8 @@ import {
     REMOVE_BUTTON,
     DONE_BUTTON,
     UNDONE_BUTTON,
+    ACTIVE_TODOS_HEADER,
+    COMPLETED_TODOS_HEADER,
 } from "../constants/labels";
 import AddTodoForm, {
     Input,
@@ -20,7 +22,13 @@ import { ITodo } from "../types";
 import { useTodosContext } from "../todos/TodosContext";
 
 const MainView = () => {
-    const { todos, addTodo, removeTodo, toggleDone } = useTodosContext();
+    const {
+        activeTodos,
+        completedTodos,
+        addTodo,
+        removeTodo,
+        toggleDone,
+    } = useTodosContext();
 
     return (
         <>
@@ -29,7 +37,8 @@ const MainView = () => {
                 <Input />
                 <AddButton>{ADD_BUTTON}</AddButton>
             </AddTodoForm>
-            <TodosList todos={todos}>
+            { activeTodos.length ? <h3>{ACTIVE_TODOS_HEADER}</h3> : null}
+            <TodosList todos={activeTodos}>
                 {(todo: ITodo) => (
                     <TodoItem
                         todo={todo}
@@ -41,6 +50,21 @@ const MainView = () => {
                         <CompletionButton
                             texts={[DONE_BUTTON, UNDONE_BUTTON]}
                         />
+                    </TodoItem>
+                )}
+            </TodosList>
+            { completedTodos.length ? <h3>{COMPLETED_TODOS_HEADER}</h3> : null}
+            <TodosList todos={completedTodos}>
+                {(todo: ITodo) => (
+                    <TodoItem
+                        todo={todo}
+                        onRemove={removeTodo}
+                        onCompletion={toggleDone}
+                    >
+                        <CompletionButton
+                            texts={[DONE_BUTTON, UNDONE_BUTTON]}
+                        />
+                        <Text />
                     </TodoItem>
                 )}
             </TodosList>
