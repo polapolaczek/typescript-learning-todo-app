@@ -1,6 +1,8 @@
 import React from "react";
 import { AddTodoContext } from "./AddTodoFormContext";
 import useAddTodo from "./useAddTodo";
+import Input from "./Input";
+import AddButton from "./AddButton";
 
 type AddTodoFormProps = {
     children: React.ReactNode;
@@ -23,3 +25,5 @@ const AddTodoForm = ({ children, onAdd }: AddTodoFormProps) => {
 };
 
 export default AddTodoForm;
+
+export { Input, AddButton };

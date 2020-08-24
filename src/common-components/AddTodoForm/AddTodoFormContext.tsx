@@ -1,16 +1,14 @@
-import React, { createContext } from "react";
+import React from "react";
+import useCreateControlledContext from "../../utils/useCreateControlledContext";
 
-export interface IAddTodoContext {
+interface IAddTodoContext {
     todoInput: string;
     handleTodoChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const AddTodoContext = createContext<Partial<IAddTodoContext>>({});
+const [useAddTodoContext, AddTodoContext] = useCreateControlledContext<
+    IAddTodoContext
+>('AddTodoContext');
 
-export const useAddTodoContext = () => {
-    const context = React.useContext(AddTodoContext);
-    if (!context) {
-        throw new Error("AddTodoContext used outside of its Provider");
-    }
-    return context;
-};
+export { useAddTodoContext, AddTodoContext };
+

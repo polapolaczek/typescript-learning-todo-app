@@ -13,7 +13,14 @@ const useTodos = () => {
         []
     );
 
-    return { todos, addTodo };
+    const removeTodo = useCallback(
+        (id: string) => {
+            setTodos((prev) => todos.filter((todo) => id !== todo.id));
+        },
+        [todos]
+    );
+
+    return { todos, addTodo, removeTodo };
 };
 
 export default useTodos;

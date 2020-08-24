@@ -1,25 +1,34 @@
 import React from "react";
-import { HEADER, ADD_BUTTON } from "../constants/labels";
-import useTodos from "../common-hooks/useTodos";
-import AddTodoInput from "../common-components/AddTodoForm/AddTodoInput";
-import AddTodoButton from "../common-components/AddTodoForm/AddTodoButton";
-import AddTodoForm from "../common-components/AddTodoForm/AddTodoForm";
+import { HEADER, ADD_BUTTON, REMOVE_BUTTON } from "../constants/labels";
+import AddTodoForm, {
+    Input,
+    AddButton,
+} from "../common-components/AddTodoForm/AddTodoForm";
 import TodosList from "../common-components/TodosList";
-import TodoItem from "../common-components/TodoItem";
+import TodoItem, {
+    Text,
+    RemoveButton,
+} from "../common-components/TodoItem/TodoItem";
 import { ITodo } from "../types";
+import { useTodosContext } from "../todos/TodosContext";
 
 const MainView = () => {
-    const { todos, addTodo } = useTodos();
+    const { todos, addTodo, removeTodo } = useTodosContext();
 
     return (
         <>
             <h1>{HEADER}</h1>
             <AddTodoForm onAdd={addTodo}>
-                <AddTodoInput />
-                <AddTodoButton>{ADD_BUTTON}</AddTodoButton>
+                <Input />
+                <AddButton>{ADD_BUTTON}</AddButton>
             </AddTodoForm>
             <TodosList todos={todos}>
-                {(todo: ITodo) => <TodoItem {...todo} />}
+                {(todo: ITodo) => (
+                    <TodoItem todo={todo} onRemove={removeTodo}>
+                        <Text />
+                        <RemoveButton>{REMOVE_BUTTON}</RemoveButton>
+                    </TodoItem>
+                )}
             </TodosList>
         </>
     );
