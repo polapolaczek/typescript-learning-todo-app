@@ -37,7 +37,7 @@ const MainView = () => {
                 <Input />
                 <AddButton>{ADD_BUTTON}</AddButton>
             </AddTodoForm>
-            { activeTodos.length ? <h3>{ACTIVE_TODOS_HEADER}</h3> : null}
+            {activeTodos.length ? <h3>{ACTIVE_TODOS_HEADER}</h3> : null}
             <TodosList todos={activeTodos}>
                 {(todo: ITodo) => (
                     <TodoItem
@@ -53,7 +53,7 @@ const MainView = () => {
                     </TodoItem>
                 )}
             </TodosList>
-            { completedTodos.length ? <h3>{COMPLETED_TODOS_HEADER}</h3> : null}
+            {completedTodos.length ? <h3>{COMPLETED_TODOS_HEADER}</h3> : null}
             <TodosList todos={completedTodos}>
                 {(todo: ITodo) => (
                     <TodoItem

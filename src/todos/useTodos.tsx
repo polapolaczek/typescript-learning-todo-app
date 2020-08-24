@@ -3,7 +3,6 @@ import { ITodo } from "../types";
 import getElementById from "../utils/getElementById";
 import removeUndefinedFromArray from "../utils/removeUndefinedFromArray";
 
-
 const getCompletedTodos = (todos: ITodo[], completedIds: string[]) => {
     const completedTodos = completedIds.map(getElementById<ITodo>(todos));
     return removeUndefinedFromArray(completedTodos);
@@ -13,8 +12,13 @@ const useTodos = () => {
     const [todos, setTodos] = useState<ITodo[]>([]);
     const [completedTodosIds, setCompletedTodosIds] = useState<string[]>([]);
 
-    const activeTodos = useMemo(() => todos.filter((todo) => !todo.isDone), [todos]);
-    const completedTodos = useMemo(() => getCompletedTodos(todos, completedTodosIds), [todos, completedTodosIds]);
+    const activeTodos = useMemo(() => todos.filter((todo) => !todo.isDone), [
+        todos,
+    ]);
+    const completedTodos = useMemo(
+        () => getCompletedTodos(todos, completedTodosIds),
+        [todos, completedTodosIds]
+    );
 
     const addTodo = useCallback(
         (text: string, id: string) =>
@@ -45,7 +49,15 @@ const useTodos = () => {
         );
     }, []);
 
-    return { todos, activeTodos, completedTodos, completedTodosIds, addTodo, removeTodo, toggleDone };
+    return {
+        todos,
+        activeTodos,
+        completedTodos,
+        completedTodosIds,
+        addTodo,
+        removeTodo,
+        toggleDone,
+    };
 };
 
 export default useTodos;
