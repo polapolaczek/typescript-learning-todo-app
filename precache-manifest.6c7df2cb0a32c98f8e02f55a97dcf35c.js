@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2366f6f2cbef02e37149ee0b4106fceb",
+    "revision": "fe6e73aeb4293ff6ce436cd9c41fce09",
     "url": "/typescript-learning-todo-app/index.html"
   },
   {
-    "revision": "26cf4fef8866dd42d61c",
+    "revision": "1d3020b310fcf3130d84",
     "url": "/typescript-learning-todo-app/static/css/main.4a4761de.chunk.css"
   },
   {
-    "revision": "6d806202a2b9cc43fe0d",
-    "url": "/typescript-learning-todo-app/static/js/2.e3c788d4.chunk.js"
+    "revision": "7d9e493a2ed2d4e2de19",
+    "url": "/typescript-learning-todo-app/static/js/2.d7bd3401.chunk.js"
   },
   {
     "revision": "90565ba0b43e1b95d2876295dfd7014d",
-    "url": "/typescript-learning-todo-app/static/js/2.e3c788d4.chunk.js.LICENSE.txt"
+    "url": "/typescript-learning-todo-app/static/js/2.d7bd3401.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "26cf4fef8866dd42d61c",
-    "url": "/typescript-learning-todo-app/static/js/main.42465ac0.chunk.js"
+    "revision": "1d3020b310fcf3130d84",
+    "url": "/typescript-learning-todo-app/static/js/main.c90e070e.chunk.js"
   },
   {
     "revision": "2740428acc01694430f5",
