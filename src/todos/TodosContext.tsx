@@ -10,10 +10,10 @@ const [useTodosContext, TodosContext] = useCreateControlledContext<
 >("TodosContext");
 
 const TodosContextProvider = (props: $TSFixMe) => {
-    const { todos, addTodo, removeTodo } = useTodos();
+    const { todos, addTodo, removeTodo, markAsDone } = useTodos();
     return (
         <TodosContext.Provider
-            value={{ todos, addTodo, removeTodo }}
+            value={{ todos, addTodo, removeTodo, markAsDone }}
             {...props}
         />
     );

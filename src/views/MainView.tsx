@@ -19,7 +19,7 @@ import { ITodo } from "../types";
 import { useTodosContext } from "../todos/TodosContext";
 
 const MainView = () => {
-    const { todos, addTodo, removeTodo } = useTodosContext();
+    const { todos, addTodo, removeTodo, markAsDone } = useTodosContext();
 
     return (
         <>
@@ -30,7 +30,11 @@ const MainView = () => {
             </AddTodoForm>
             <TodosList todos={todos}>
                 {(todo: ITodo) => (
-                    <TodoItem todo={todo} onRemove={removeTodo}>
+                    <TodoItem
+                        todo={todo}
+                        onRemove={removeTodo}
+                        onDone={markAsDone}
+                    >
                         <Text />
                         <RemoveButton>{REMOVE_BUTTON}</RemoveButton>
                         <DoneButton>{DONE_BUTTON}</DoneButton>

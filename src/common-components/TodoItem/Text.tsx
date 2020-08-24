@@ -1,12 +1,14 @@
 import React from "react";
 import { useTodoItemContext } from "./TodoItemContext";
+import "./Text.css";
 
 const Text = () => {
     const {
-        todo: { text },
+        todo: { text, isDone },
     } = useTodoItemContext();
 
-    return <span>{text}</span>;
+    const attributes = isDone ? { className: "done" } : {};
+    return <span {...attributes}>{text}</span>;
 };
 
 export default Text;

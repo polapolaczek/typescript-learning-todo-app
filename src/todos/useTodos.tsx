@@ -7,7 +7,7 @@ const useTodos = () => {
     const addTodo = useCallback(
         (text: string, id: string) =>
             setTodos((prev) => {
-                const newTodo: ITodo = { text, id };
+                const newTodo: ITodo = { text, id, isDone: false };
                 return [...prev, newTodo];
             }),
         []
@@ -20,7 +20,13 @@ const useTodos = () => {
         [todos]
     );
 
-    return { todos, addTodo, removeTodo };
+    const markAsDone = useCallback((id: string) => {
+        const updateDone = (prevTodo: ITodo) =>
+            prevTodo.id === id ? { ...prevTodo, isDone: true } : prevTodo;
+        setTodos((prev) => prev.map(updateDone));
+    }, []);
+
+    return { todos, addTodo, removeTodo, markAsDone };
 };
 
 export default useTodos;
