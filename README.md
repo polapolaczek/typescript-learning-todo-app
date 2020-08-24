@@ -10,7 +10,7 @@ _Created for the purposes of learning Typescript. See the [live demo](http://pol
 -   [ ] basic functionality
     -   [x] add todo
     -   [x] display added todo
-    -   [ ] remove added todo
+    -   [x] remove added todo
     -   [ ] mark todo as completed
 
 ---
