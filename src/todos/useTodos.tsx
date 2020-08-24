@@ -22,7 +22,9 @@ const useTodos = () => {
 
     const toggleDone = useCallback((id: string) => {
         const updateDone = (prevTodo: ITodo) =>
-            prevTodo.id === id ? { ...prevTodo, isDone: !prevTodo.isDone } : prevTodo;
+            prevTodo.id === id
+                ? { ...prevTodo, isDone: !prevTodo.isDone }
+                : prevTodo;
         setTodos((prev) => prev.map(updateDone));
     }, []);
 

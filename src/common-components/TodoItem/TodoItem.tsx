@@ -8,7 +8,12 @@ type TodoItemProps = ITodoItem & {
     children: React.ReactNode;
 };
 
-const TodoItem = ({ children, todo, onRemove, onCompletion }: TodoItemProps) => {
+const TodoItem = ({
+    children,
+    todo,
+    onRemove,
+    onCompletion,
+}: TodoItemProps) => {
     return (
         <TodoItemContext.Provider value={{ todo, onRemove, onCompletion }}>
             <div>{children}</div>
