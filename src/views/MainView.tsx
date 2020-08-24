@@ -38,7 +38,9 @@ const MainView = () => {
                     >
                         <Text />
                         <RemoveButton>{REMOVE_BUTTON}</RemoveButton>
-                        <CompletionButton texts={[DONE_BUTTON, UNDONE_BUTTON]}/>
+                        <CompletionButton
+                            texts={[DONE_BUTTON, UNDONE_BUTTON]}
+                        />
                     </TodoItem>
                 )}
             </TodosList>
