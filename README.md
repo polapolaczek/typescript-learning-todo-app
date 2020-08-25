@@ -6,12 +6,20 @@ _Created for the purposes of learning Typescript. See the [live demo](http://pol
 
 ### Game Plan
 
--   [x] setup for React + Typescript
+Functionalities:
 -   [x] basic functionality
     -   [x] add todo
     -   [x] display added todo
     -   [x] remove added todo
     -   [x] mark todo as completed
+-   [x] display completed on separate list, in order of completion
+-   [ ] mark todo as priority
+-   [ ] remove all completed todos
+-   [ ] all completed info on todos list 
+
+Other:
+-   [x] setup for React + Typescript
+-   [ ] add styling 
 
 ---
 
