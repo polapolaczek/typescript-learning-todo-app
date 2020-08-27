@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/typescript-learning-todo-app/precache-manifest.6c7df2cb0a32c98f8e02f55a97dcf35c.js"
+  "/typescript-learning-todo-app/precache-manifest.5e64a2f740fd00b280076c3b76d5b698.js"
 );
 
 self.addEventListener('message', (event) => {

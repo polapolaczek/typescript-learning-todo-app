@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/typescript-learning-todo-app/static/css/main.4a4761de.chunk.css",
-    "main.js": "/typescript-learning-todo-app/static/js/main.c90e070e.chunk.js",
-    "main.js.map": "/typescript-learning-todo-app/static/js/main.c90e070e.chunk.js.map",
+    "main.js": "/typescript-learning-todo-app/static/js/main.85f2c71b.chunk.js",
+    "main.js.map": "/typescript-learning-todo-app/static/js/main.85f2c71b.chunk.js.map",
     "runtime-main.js": "/typescript-learning-todo-app/static/js/runtime-main.4e4f0ec5.js",
     "runtime-main.js.map": "/typescript-learning-todo-app/static/js/runtime-main.4e4f0ec5.js.map",
     "static/js/2.d7bd3401.chunk.js": "/typescript-learning-todo-app/static/js/2.d7bd3401.chunk.js",
     "static/js/2.d7bd3401.chunk.js.map": "/typescript-learning-todo-app/static/js/2.d7bd3401.chunk.js.map",
     "index.html": "/typescript-learning-todo-app/index.html",
-    "precache-manifest.6c7df2cb0a32c98f8e02f55a97dcf35c.js": "/typescript-learning-todo-app/precache-manifest.6c7df2cb0a32c98f8e02f55a97dcf35c.js",
+    "precache-manifest.5e64a2f740fd00b280076c3b76d5b698.js": "/typescript-learning-todo-app/precache-manifest.5e64a2f740fd00b280076c3b76d5b698.js",
     "service-worker.js": "/typescript-learning-todo-app/service-worker.js",
     "static/css/main.4a4761de.chunk.css.map": "/typescript-learning-todo-app/static/css/main.4a4761de.chunk.css.map",
     "static/js/2.d7bd3401.chunk.js.LICENSE.txt": "/typescript-learning-todo-app/static/js/2.d7bd3401.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4e4f0ec5.js",
     "static/js/2.d7bd3401.chunk.js",
     "static/css/main.4a4761de.chunk.css",
-    "static/js/main.c90e070e.chunk.js"
+    "static/js/main.85f2c71b.chunk.js"
   ]
 }

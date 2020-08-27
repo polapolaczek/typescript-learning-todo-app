@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe6e73aeb4293ff6ce436cd9c41fce09",
+    "revision": "ce80217709aee6634aea43b218bcc91b",
     "url": "/typescript-learning-todo-app/index.html"
   },
   {
-    "revision": "1d3020b310fcf3130d84",
+    "revision": "c1ce698e2a80d501faf7",
     "url": "/typescript-learning-todo-app/static/css/main.4a4761de.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/typescript-learning-todo-app/static/js/2.d7bd3401.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1d3020b310fcf3130d84",
-    "url": "/typescript-learning-todo-app/static/js/main.c90e070e.chunk.js"
+    "revision": "c1ce698e2a80d501faf7",
+    "url": "/typescript-learning-todo-app/static/js/main.85f2c71b.chunk.js"
   },
   {
     "revision": "2740428acc01694430f5",
