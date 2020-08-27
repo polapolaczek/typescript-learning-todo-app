@@ -5,7 +5,8 @@ const useAddTodo = (onAdd: (text: string, id: string) => void) => {
     const [todoInput, setTodoInput] = useState<string>("");
 
     const handleTodoChange = useCallback(
-        (e: React.ChangeEvent<HTMLInputElement>) => setTodoInput(e.target.value),
+        (e: React.ChangeEvent<HTMLInputElement>) =>
+            setTodoInput(e.target.value),
         []
     );
 

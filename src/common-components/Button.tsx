@@ -4,7 +4,7 @@ export interface IButtonProps extends React.ComponentPropsWithoutRef<"button"> {
     text?: string | string[];
 }
 
-const Button = (props: IButtonProps) => (
+const Button: React.FC<IButtonProps> = (props) => (
     <button {...props}>{props.text ? props.text : props.children}</button>
 );
 

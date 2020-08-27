@@ -4,16 +4,12 @@ import RemoveButton from "./RemoveButton";
 import CompletionButton from "./CompletionButton";
 import Text from "./Text";
 
-type TodoItemProps = ITodoItem & {
-    children: React.ReactNode;
-};
-
-const TodoItem = ({
+const TodoItem: React.FC<ITodoItem> = ({
     children,
     todo,
     onRemove,
     onCompletion,
-}: TodoItemProps) => {
+}) => {
     return (
         <TodoItemContext.Provider value={{ todo, onRemove, onCompletion }}>
             <div>{children}</div>

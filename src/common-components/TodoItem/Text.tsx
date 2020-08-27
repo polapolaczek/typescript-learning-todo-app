@@ -2,7 +2,7 @@ import React from "react";
 import { useTodoItemContext } from "./TodoItemContext";
 import "./Text.css";
 
-const Text = () => {
+const Text: React.FC = () => {
     const {
         todo: { text, isDone },
     } = useTodoItemContext();

@@ -53,7 +53,6 @@ const useTodos = () => {
         todos,
         activeTodos,
         completedTodos,
-        completedTodosIds,
         addTodo,
         removeTodo,
         toggleDone,

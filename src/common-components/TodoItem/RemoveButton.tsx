@@ -2,7 +2,7 @@ import React from "react";
 import Button, { IButtonProps } from "../Button";
 import { useTodoItemContext } from "./TodoItemContext";
 
-const RemoveButton = (props: IButtonProps) => {
+const RemoveButton: React.FC<IButtonProps> = (props) => {
     const {
         todo: { id },
         onRemove,

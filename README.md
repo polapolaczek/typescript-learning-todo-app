@@ -19,6 +19,7 @@ Functionalities:
 
 Other:
 -   [x] setup for React + Typescript
+-   [ ] refactor types for the functional component - use React's type definition
 -   [ ] add styling 
 
 ---

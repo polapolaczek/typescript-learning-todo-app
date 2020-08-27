@@ -1,5 +1,5 @@
 import React from "react";
-import { ITodos, $TSFixMe } from "../types";
+import { ITodos } from "../types";
 import useCreateControlledContext from "../utils/useCreateControlledContext";
 import useTodos from "./useTodos";
 
@@ -9,7 +9,7 @@ const [useTodosContext, TodosContext] = useCreateControlledContext<
     ITodosContext
 >("TodosContext");
 
-const TodosContextProvider = (props: $TSFixMe) => {
+const TodosContextProvider: React.FC = (props) => {
     const {
         todos,
         activeTodos,

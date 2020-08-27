@@ -6,7 +6,7 @@ type TodosListProps = {
     children: (el: ITodo) => React.ReactNode;
 };
 
-const TodosList = ({ todos, children }: TodosListProps) => (
+const TodosList: React.FC<TodosListProps> = ({ todos, children }) => (
     <ul>
         {todos.map((el) => (
             <li key={el.id}>{children(el)}</li>

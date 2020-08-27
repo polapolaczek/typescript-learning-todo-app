@@ -6,7 +6,7 @@ type CompletionButton = {
     texts: string[];
 };
 
-const CompletionButton = (props: CompletionButton) => {
+const CompletionButton: React.FC<CompletionButton> = (props) => {
     const {
         todo: { id, isDone },
         onCompletion,

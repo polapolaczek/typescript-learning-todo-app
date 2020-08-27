@@ -21,7 +21,7 @@ import TodoItem, {
 import { ITodo } from "../types";
 import { useTodosContext } from "../todos/TodosContext";
 
-const MainView = () => {
+const MainView: React.FC = () => {
     const {
         activeTodos,
         completedTodos,

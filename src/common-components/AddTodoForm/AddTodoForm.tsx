@@ -5,11 +5,10 @@ import Input from "./Input";
 import AddButton from "./AddButton";
 
 type AddTodoFormProps = {
-    children: React.ReactNode;
     onAdd: (todo: string, id: string) => void;
 };
 
-const AddTodoForm = ({ children, onAdd }: AddTodoFormProps) => {
+const AddTodoForm: React.FC<AddTodoFormProps> = ({ children, onAdd }) => {
     const { todoInput, handleTodoChange, handleTodoSubmit } = useAddTodo(onAdd);
 
     return (

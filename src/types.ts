@@ -7,10 +7,9 @@ export interface ITodos {
     todos: ITodo[];
     activeTodos: ITodo[];
     completedTodos: ITodo[];
-    completedTodosIds: string[];
     addTodo: (text: string, id: string) => void;
     removeTodo: (id: string) => void;
     toggleDone: (id: string) => void;
 }
 
-export type $TSFixMe = any;
+// export type $TSFixMe = any;
